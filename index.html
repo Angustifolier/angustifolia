@@ -9,9 +9,9 @@
       color: #000;
       font-family: sans-serif;
       line-height: 1.6;
-      max-width: 1000px; /* Ajustando a largura do body */
       margin: 50px auto;
       padding: 0 20px;
+      max-width: 1200px; /* Limitando a largura máxima da página */
     }
 
     h1 {
@@ -26,20 +26,16 @@
     /* Container com layout flex */
     .container {
       display: flex;
-      gap: 20px; /* Espaçamento entre as colunas */
-      flex-wrap: wrap; /* Garante que as colunas se ajustem em telas pequenas */
+      gap: 20px;
+      flex-wrap: wrap; /* Ajuste para telas menores */
     }
 
     /* Estilo para a coluna de post */
     .post {
-      flex: 0 0 70%; /* A postagem ocupa 70% da largura */
-      max-width: 70%; /* Garante que o conteúdo da postagem não ultrapasse 70% */
+      flex: 1 1 70%; /* A postagem ocupa 70% da largura */
+      max-width: 70%;
     }
 
     /* Estilo para a sidebar */
     .sidebar {
-      flex: 0 0 30%; /* Sidebar ocupa 30% da largura */
-      background-color: #f4f4f4; /* Cor de fundo da sidebar */
-      padding: 20px;
-      height: auto;
-      border: 2px solid
+      flex: 1 1 30%; /
