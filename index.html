@@ -9,16 +9,44 @@
       color: #000;
       font-family: sans-serif;
       line-height: 1.6;
-      max-width: 700px;
+      max-width: 900px; /* Aumentei a largura máxima */
       margin: 50px auto;
       padding: 0 20px;
     }
+
     h1 {
       font-size: 2.5rem;
     }
+
     audio, iframe {
       width: 100%;
       margin: 20px 0;
+    }
+
+    /* Estilo para o container */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; /* Espaço entre as colunas */
+    }
+
+    /* Estilo para o conteúdo do post */
+    .post {
+      flex: 0 0 70%; /* A postagem ocupa 70% da largura */
+    }
+
+    /* Estilo para a sidebar */
+    .sidebar {
+      flex: 0 0 30%; /* A sidebar ocupa 30% da largura */
+      background-color: #f4f4f4; /* Cor de fundo da sidebar */
+      padding: 20px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f4f4f4;
     }
   </style>
 </head>
@@ -27,11 +55,15 @@
   <div class="container">
     <div class="post">
         <!-- Aqui vai o conteúdo da postagem -->
+        <h2>Conteúdo do post</h2>
+        <p>Aqui vai o texto principal da postagem...</p>
     </div>
     <div class="sidebar">
         <!-- Coluna em branco ou qualquer outro conteúdo futuro -->
+        <p>Espaço para adicionar futuros conteúdos.</p>
     </div>
-</div>
+  </div>
+
   <h1>angustifolia</h1>
   <p>Este é um espaço pessoal para textos, reflexões e ideias. O conteúdo aqui é experimental, e pode ser modificado a qualquer momento.</p>
 
@@ -44,5 +76,6 @@
   <footer>
     <p>&copy; 2025 Angustifolier. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
