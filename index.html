@@ -11,7 +11,9 @@
       line-height: 1.6;
       margin: 50px auto;
       padding: 0 20px;
-      max-width: 800px; /* Limitando a largura máxima da página */
+      width: 100%; /* Garante que o body ocupe 100% da largura da tela */
+      max-width: 1200px; /* Limita a largura do conteúdo */
+      box-sizing: border-box; /* Garantir que o padding não afete o layout */
     }
 
     h1 {
@@ -34,6 +36,7 @@
     .post {
       flex: 1 1 70%; /* A postagem ocupa 70% da largura */
       max-width: 70%;
+      box-sizing: border-box;
     }
 
     /* Estilo para a sidebar */
@@ -60,37 +63,3 @@
 
       .post, .sidebar {
         flex: 1 1 100%; /* Ambos ocupam 100% da largura em telas pequenas */
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <div class="post">
-        <!-- Conteúdo da postagem -->
-        <h2>Conteúdo do post</h2>
-        <p>Aqui vai o texto principal da postagem...</p>
-    </div>
-    <div class="sidebar">
-        <!-- Coluna lateral em branco ou qualquer outro conteúdo futuro -->
-        <p>Espaço para adicionar futuros conteúdos.</p>
-    </div>
-  </div>
-
-  <h1>angustifolia</h1>
-  <p>Este é um espaço pessoal para textos, reflexões e ideias. O conteúdo aqui é experimental, e pode ser modificado a qualquer momento.</p>
-
-  <h2>Posts Recentes:</h2>
-  <ul>
-    <li><a href="/posts/2025-04-ON-MINOR-BANDS.html">ON MINOR BANDS WITH GIANT TASKS</a></li>
-    <!-- Adicione novos links de post acima deste, para que o mais recente apareça primeiro -->
-  </ul>
-
-  <footer>
-    <p>&copy; 2025 Angustifolier. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
-</html>
