@@ -9,7 +9,7 @@
       color: #000;
       font-family: sans-serif;
       line-height: 1.6;
-      max-width: 900px; /* Aumentei a largura máxima */
+      max-width: 1000px; /* Largura máxima ajustada */
       margin: 50px auto;
       padding: 0 20px;
     }
@@ -23,21 +23,22 @@
       margin: 20px 0;
     }
 
-    /* Estilo para o container */
+    /* Container com layout flex */
     .container {
       display: flex;
-      justify-content: space-between;
-      gap: 20px; /* Espaço entre as colunas */
+      gap: 20px; /* Espaçamento entre as colunas */
+      flex-wrap: wrap; /* Garante que as colunas se ajustem em telas pequenas */
     }
 
-    /* Estilo para o conteúdo do post */
+    /* Estilo para a coluna de post */
     .post {
       flex: 0 0 70%; /* A postagem ocupa 70% da largura */
+      max-width: 70%; /* Garante que o conteúdo da postagem não ultrapasse 70% */
     }
 
     /* Estilo para a sidebar */
     .sidebar {
-      flex: 0 0 30%; /* A sidebar ocupa 30% da largura */
+      flex: 0 0 30%; /* Sidebar ocupa 30% da largura */
       background-color: #f4f4f4; /* Cor de fundo da sidebar */
       padding: 20px;
       height: auto;
@@ -48,18 +49,19 @@
       padding: 10px;
       background-color: #f4f4f4;
     }
+
   </style>
 </head>
 <body>
 
   <div class="container">
     <div class="post">
-        <!-- Aqui vai o conteúdo da postagem -->
+        <!-- Conteúdo da postagem -->
         <h2>Conteúdo do post</h2>
         <p>Aqui vai o texto principal da postagem...</p>
     </div>
     <div class="sidebar">
-        <!-- Coluna em branco ou qualquer outro conteúdo futuro -->
+        <!-- Coluna lateral em branco ou qualquer outro conteúdo futuro -->
         <p>Espaço para adicionar futuros conteúdos.</p>
     </div>
   </div>
