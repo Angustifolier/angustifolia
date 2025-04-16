@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <title>angustifolia</title>
   <style>
+    /* Garante que o corpo da página tenha fundo branco e texto preto */
     body {
-      background: #fff;
+      background-color: #fff;
       color: #000;
       font-family: sans-serif;
-      line-height: 1.6;
-      margin: 50px auto;
+      margin: 0;
       padding: 0;
-      max-width: 1200px; /* Define o tamanho máximo da página */
-      width: 100%; /* Garante que ocupe toda a largura da tela até o máximo definido */
+    }
+
+    /* Esta é a caixa central onde o conteúdo vai */
+    .container {
+      max-width: 700px;      /* Limita a largura máxima */
+      margin: 50px auto;     /* Centraliza horizontalmente */
+      padding: 0 20px;       /* Espaço interno nas laterais */
       box-sizing: border-box;
     }
 
@@ -25,36 +30,25 @@
       margin: 20px 0;
     }
 
-    /* Definindo a borda e o limite de largura para o conteúdo */
-    .content {
-      width: 70%; /* Define a largura da postagem */
-      margin: 0 auto; /* Centraliza o conteúdo */
-      padding: 20px;
-      border: 1px solid #ccc; /* Borda ao redor do conteúdo */
-      box-sizing: border-box; /* Não deixa o padding ultrapassar a largura */
-    }
-
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: #f4f4f4;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <div class="content">
+  <div class="container">
     <h1>angustifolia</h1>
-    <p>Este é um espaço pessoal para textos, reflexões e ideias. O conteúdo aqui é experimental, e pode ser modificado a qualquer momento.</p>
+    <p>Este é um espaço pessoal para textos, reflexões e ideias. O conteúdo aqui é experimental e pode ser modificado a qualquer momento.</p>
 
     <h2>Posts Recentes:</h2>
     <ul>
       <li><a href="/posts/2025-04-ON-MINOR-BANDS.html">ON MINOR BANDS WITH GIANT TASKS</a></li>
-      <!-- Adicione novos links de post acima deste, para que o mais recente apareça primeiro -->
+      <!-- Adicione novos links de post acima deste -->
     </ul>
-
-    <h2>Conteúdo da postagem</h2>
-    <p>Aqui vai o texto principal da postagem...</p>
   </div>
 
   <footer>
