@@ -4,21 +4,30 @@
   <meta charset="UTF-8">
   <title>angustifolia</title>
   <style>
-    /* Garante que o corpo da página tenha fundo branco e texto preto */
     body {
+      margin: 0;
+      font-family: sans-serif;
       background-color: #fff;
       color: #000;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
     }
 
-    /* Esta é a caixa central onde o conteúdo vai */
-    .container {
-      max-width: 700px;      /* Limita a largura máxima */
-      margin: 50px auto;     /* Centraliza horizontalmente */
-      padding: 0 20px;       /* Espaço interno nas laterais */
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
       box-sizing: border-box;
+    }
+
+    .content {
+      flex: 0 0 70%;
+      max-width: 70%;
+      padding-right: 40px;
+    }
+
+    .sidebar {
+      flex: 0 0 30%;
+      max-width: 30%;
     }
 
     h1 {
@@ -36,19 +45,41 @@
       font-size: 0.9rem;
       color: #555;
     }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>angustifolia</h1>
-    <p>Este é um espaço pessoal para textos, reflexões e ideias. O conteúdo aqui é experimental e pode ser modificado a qualquer momento.</p>
+  <div class="wrapper">
+    <div class="content">
+      <h1>ON MINOR BANDS WITH GIANT TASKS</h1>
+      <p>[Aqui entra o conteúdo da primeira postagem — pode colar a versão em inglês aqui ou a tradução]</p>
+    </div>
 
-    <h2>Posts Recentes:</h2>
-    <ul>
-      <li><a href="/posts/2025-04-ON-MINOR-BANDS.html">ON MINOR BANDS WITH GIANT TASKS</a></li>
-      <!-- Adicione novos links de post acima deste -->
-    </ul>
+    <div class="sidebar">
+      <h2>Posts Recentes</h2>
+      <ul>
+        <li><a href="/posts/2025-04-ON-MINOR-BANDS.html">ON MINOR BANDS WITH GIANT TASKS</a></li>
+        <li><a href="/posts/2025-04-VERSAO-PORTUGUES.html">Versão em Português</a></li>
+      </ul>
+    </div>
   </div>
 
   <footer>
