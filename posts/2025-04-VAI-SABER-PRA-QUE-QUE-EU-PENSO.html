@@ -25,7 +25,18 @@
            font-style: italic; /* opcional, garante o itálico */
         }
 
-        /* Ajuste de imagem para evitar margens */
+
+/* Ajuste de imagem para evitar margens e garantir o alinhamento com o texto */
+img {
+    margin-top: 0; /* Remove o espaço acima da imagem */
+    margin-bottom: 0; /* Remove o espaço abaixo da imagem */
+    display: block; /* Garante que a imagem seja um bloco */
+    width: 100%; /* Ajusta a largura da imagem para 100% da largura do conteúdo */
+    max-width: 750px; /* Garante que a largura da imagem não ultrapasse a largura máxima do corpo */
+    margin-left: auto; /* Centraliza a imagem à esquerda */
+    margin-right: auto; /* Centraliza a imagem à direita */
+}
+        
         img {
             margin-top: 0; /* Remove o espaço acima da imagem */
             margin-bottom: 0; /* Remove o espaço abaixo da imagem */
